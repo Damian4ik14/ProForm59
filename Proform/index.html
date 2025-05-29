@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+	<title>ProForm59</title>
+</head>
+<body>
+	<header class="head-cont" id="#head">
+		<nav class="nav-cont">
+
+			<div class="logo" id="logo">
+
+				<p href="index.html" class="alogo"> ProForm59</p>
+
+				<button class="filter" id="filter"> <a href="" class="a">Фильтры</a></button>
+
+				<input type="text" name="search" id="#search" class="search">
+
+				<a href="" class="btn-one btn" id="1">Товар</a>
+				<a href="#feat" class="btn-two btn" id="2">Популярное</a>
+				<a href="#gly" class="btn-three btn" id="3">Галерея</a>
+				<a href="#order" class="btn-four btn" id="4">Заказать</a>
+
+			<div class="register">
+				<button class="reg btnl"><a href="">Регистрация</a></button>
+				<button class="login btnl"><a href="">Войти</a></button>
+			</div>
+			</div>
+
+		</nav>
+	</header>
+
+	  <!-- Description -->
+  <section class="intro">
+    <h2 class="h2-int">Индивидуальная мебель на заказ</h2>
+    Мы создаём качественную мебель по вашим размерам и вкусам: кухни, шкафы, столы и многое другое. Удобство, стиль и долговечность — всё в одном.
+  </section>
+
+<!-- Популярные товрары -->
+	<section class="section-container" id="feat">
+				<h2 class="h2-title">Популярные товары</h2>
+				<div class="featured-container grid">
+				<article class="featured-cart">
+					<span class="featured-tag"></span>
+					<img src="image/Шкаф.png" alt="" class="featured-img">
+					<div class="featured-data">
+						<h3 class="featured-title">Шкаф</h3>
+						<!-- <span class="featured-price">Узнать цену</span> -->
+					</div>
+					<button class="featured-button button" onclick="window.location.href='#order'">Купить</button>
+				</article>
+
+				<article class="featured-cart">
+					<span class="featured-tag"></span>
+					<img src="image/Кровать.png" alt="" class="featured-img">
+					<div class="featured-data">
+						<h3 class="featured-title">Кровать</h3>
+						<!-- <span class="featured-price">Узнать цену</span> -->
+					</div>
+					<button class="featured-button button" onclick="window.location.href='#order'">Купить</button>
+				</article>
+
+				<article class="featured-cart">
+					<span class="featured-tag"></span>
+					<img src="image/Кухня.png" alt="" class="featured-img">
+					<div class="featured-data">
+						<h3 class="featured-title">Кухня</h3>
+						<!-- <span class="featured-price">Узнать цену</span> -->
+					</div>
+					<button class="featured-button button" onclick="window.location.href='#order'">Купить</button>
+				</article>
+
+				<article class="featured-cart">
+					<span class="featured-tag"></span>
+					<img src="image/Стол.png" alt="" class="featured-img">
+					<div class="featured-data">
+						<h3 class="featured-title">Стол</h3>
+						<!-- <span class="featured-price">Узнать цену</span> -->
+					</div>
+					<button class="featured-button button" onclick="window.location.href='#order'">Купить</button>
+				</article>
+	</section>
+
+<!-- Галерея -->
+<h1 class="h2-title">Галлерея</h1>
+
+	<section class="gallery grid-gly" id="gly">
+
+		<article class="gly-card">
+			<img src="image/Кухня2.png" alt="" class="gly-img">
+			<span class="gly-title">Кухня</span>
+		</article>
+
+		<article class="gly-card">
+			<img src="image/шкаф2.png" alt="" class="gly-img">
+			<span class="gly-title">Шкаф</span>
+		</article>
+
+		<article class="gly-card">
+			<img src="image/Кровать.png" alt="" class="gly-img">
+			<span class="gly-title">Кровать</span>
+		</article>
+
+		<button onclick="window.location.href='#'" class="nextgly"><p class="next">Ещё</p></button>
+	</section>
+
+	  <section id="order" class="section form-section">
+    <h2 class="h2-title">Оставить заявку</h2>
+    <form class="form">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+
+      <select class="select">
+      	<option value="" class="none">Ничего</option>
+      	<option value="">Шкаф</option>
+      	<option value="">Стеллаж</option>
+      	<option value="">Кухня</option>
+      	<option value="">Кровать</option>
+      	<option value="">Стол</option>
+      	<option value="">Тумба</option>
+
+      </select>
+
+      <textarea placeholder="Опишите ваш заказ..." required></textarea>
+      <button type="submit">Заказать</button>
+    </form>
+  </section>
+
+</body>
+</html>
